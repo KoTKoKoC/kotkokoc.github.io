@@ -135,6 +135,21 @@ intro__subtitle {
   font-size: 700;
   text-transform: uppercase;
 }
+.container2{
+  width: 100%;
+
+  text-align: center;
+}
+.info__title2 {
+    margin: 20px;
+  margin-bottom: 10px;
+  font-size: 50px;
+  color: #ffff;
+  font-size: 700;
+  text-transform: uppercase;
+  text-align: center;
+
+}
 .info__text {
   font-size: 20px;
   color: #ffff;
@@ -246,3 +261,4 @@ intro__subtitle {
   fill: #0000;
   transition: fill 0.1s linear;
 }
+
