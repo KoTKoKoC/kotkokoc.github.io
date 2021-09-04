@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
         array.forEach((item) => {
 		   item % 2 === 1 ? nechet += item : chet += item;
 		   })
-        return chet - nechet;
+	    return chet
+        return nechet;
     }
     // 
 
