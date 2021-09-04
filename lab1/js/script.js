@@ -6,13 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // АЛГОРИТМ
     const func = (array) => {
-        let chet = 0;
-		let nechet = 0;
+        var chet = 0;
+		var nechet = 0;
         array.forEach((item) => {
 		   item % 2 === 1 ? nechet += item : chet += item;
 		   })
-	    return chet
-        return nechet;
+	    
+        return chet - nechet;
     }
     // 
 
