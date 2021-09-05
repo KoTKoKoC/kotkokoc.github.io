@@ -8,12 +8,13 @@ document.addEventListener('DOMContentLoaded', () => {
     
    const func = (array) => {
 var input = 0;
+       var input1 = 0;
 
 array.forEach((item) => {
-item % 2 === 1 ? input += item : input += item;
+item % 2 === 1 ? input += item : input1 += item;
 })
 
-    return parseInt(input) - parseInt(input);
+    return parseInt(input) - parseInt(input1);
 }
     // 
 
