@@ -7,14 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // АЛГОРИТМ
     
    const func = (array) => {
-var input = 0;
-       var input1 = 0;
+var chet = 0;
+       var nechet = 0;
 
 array.forEach((item) => {
-item % 2 === 1 ? input += item : input1 += item;
+item % 2 === 1 ? chet += item : nechet += item;
 })
 
-    return parseInt(input) - parseInt(input1);
+    return parseInt(chet) - parseInt(nechet);
 }
     // 
 
