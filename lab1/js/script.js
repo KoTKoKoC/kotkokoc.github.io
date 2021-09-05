@@ -6,17 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // АЛГОРИТМ
     
-    function subtractingTheSumOfEvenAndOddNumbers (arr){
-    let sumEven = 0;
-    let sumOdd = 0;
-
-    for(let i = 0; i < arr.length; i++){
-        if(arr[i] % 2 == 0){
-            sumEven += arr[i];
-        }else{
-            sumOdd += arr[i];
-        }
-    }
+   const func = (array) => {
+var sumEven = 0;
+var sumOdd = 0;
+array.forEach((item) => {
+item % 2 === 1 ? sumOdd += item : sumEven += item;
+})
 
     return parseInt(sumEven) - parseInt(sumOdd);
 }
@@ -25,6 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
     button.addEventListener('click', () => {
         const arr = input.value.split(' ');
 
-        result.innerHTML = subtractingTheSumOfEvenAndOddNumbers (arr);
+        result.innerHTML = func(array);
     })
 })
