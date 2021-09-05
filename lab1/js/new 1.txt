@@ -2,29 +2,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const input = document.getElementById('input');
     const button = document.getElementById('btn');
 
-    const trueResult = document.getElementById('true');
-    const falseResult = document.getElementById('false');
+    const result = document.getElementById('result');
 
     // АЛГОРИТМ
-    const isIsogram = (str) => {
-        for(let i = 0; i <= str.length; i++) {
-            for(let j = i+1; j <= str.length; j++) {
-                if(str[j] == str[i]) {
-                    return false;
-                }
-            }
-        }
-        return true;
-    }
+    
+   const func = (array) => {
+var sumEven = 0;
+var sumOdd = 0;
+array.forEach((item) => {
+item % 2 === 1 ? sumOdd += item : sumEven += item;
+})
+
+    return parseInt(sumEven) - parseInt(sumOdd);
+}
     // 
 
     button.addEventListener('click', () => {
-        if(isIsogram(input.value)) {
-            falseResult.classList.remove('false');
-            trueResult.classList.add('true');
-        } else {
-            trueResult.classList.remove('true');
-            falseResult.classList.add('false');
-        }
+        const arr = input.value.split(' ');
+
+        result.innerHTML = func(array);
     })
 })
