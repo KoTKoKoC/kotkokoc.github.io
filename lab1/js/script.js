@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				return chetnie - nechetnie;
 			}
 
-			var text = input;
+			var text = 0;
 
 			var result = PrintSubtraction(text);
 
