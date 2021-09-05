@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    return sumEven - sumOdd;
+    return parseInt(sumEven) - parseInt(sumOdd);
 }
     // 
 
