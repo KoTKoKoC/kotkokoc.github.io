@@ -5,20 +5,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const result = document.getElementById('result');
 
     // АЛГОРИТМ
-    const func = (array) => {
-        var chet = 0;
-		var nechet = 0;
-        array.forEach((item) => {
-		   item % 2 === 1 ? nechet += item : chet += item;
-		   })
-	    
-        return chet - nechet;
+    
+    function subtractingTheSumOfEvenAndOddNumbers (arr){
+    let sumEven = 0;
+    let sumOdd = 0;
+
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] % 2 == 0){
+            sumEven += arr[i];
+        }else{
+            sumOdd += arr[i];
+        }
     }
+
+    return sumEven - sumOdd;
+}
     // 
 
     button.addEventListener('click', () => {
-        const array = input.value.split(' ');
+        const arr = input.value.split(' ');
 
-        result.innerHTML = func(array);
+        result.innerHTML = subtractingTheSumOfEvenAndOddNumbers (arr);
     })
 })
