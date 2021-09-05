@@ -6,21 +6,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // АЛГОРИТМ
     
-   const func = (array) => {
-var chet = 0;
-       var nechet = 0;
+   function PrintSubtraction(text) {
+				var textMas = new String(text).split(" ");
 
-array.forEach((item) => {
-item % 2 === 1 ? chet += item : nechet += item;
-})
+				var chetnie =0;
+				var nechetnie =0;
+				
+				for(text of textMas)
+				{
+					var chislo = parseInt(text);
+					if(chislo % 2 == 0)
+						chetnie +=chislo;
+					else
+						nechetnie +=chislo;
+				}
+				
+				return chetnie - nechetnie;
+			}
 
-    return parseInt(chet) - parseInt(nechet);
-}
+			var text = input;
+
+			var result = PrintSubtraction(text);
+
+			alert(result);
     // 
 
     button.addEventListener('click', () => {
-        const arr = input.value.split(' ');
+        const text = input.value.split(' ');
 
-        result.innerHTML = func(array);
+        result.innerHTML = PrintSubtraction(text);
     })
 })
