@@ -42,23 +42,25 @@
                var chetnie =0;
                var nechetnie =0;
 
-               for(text of textMas)
-           {
+            textMas.forEach(element -> {
+            {
                var chislo = parseInt(text);
-               if(chislo % 2 == 0)
-               chetnie +=chislo;
-                  else
+               if(chislo % 2 == 0){
+                      chetnie +=chislo;
+               }else{
                       nechetnie +=chislo;
-           }
+               }
+            }   
+            });
 
                return chetnie - nechetnie;
-           }
+            }
 
-               var text = "1234567";
+               var text = "1 2 3 4 5 6 7";
 
                var result = PrintSubtraction(text);
-               document.writeln('Целые числа: ', text , ' --> ')
-               document.writeln('Сумма: ', result)    
+               document.writeln('<span id="text" class='description' >Целые числа: </span>', text)
+               document.writeln('<span id="result" class='description' >  Сумма: </span>', result)    
 
                
       </script>
