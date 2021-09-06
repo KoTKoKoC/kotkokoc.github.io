@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЛБ 1</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="card">
+        <div class="card-body">
+            <h1 class="header">Лабораторная работа №1</h1>
+
+            <p class='description'>4.Создайте функцию, которая принимает массив целых чисел, отдельно суммирует четные и нечетные числа, а затем возвращает разницу между суммой четных и нечетных чисел.</p>
+    
+           
+            </div>
+        </div>        
+    </div>
+
+    <a id='back' class="btn btn-dark button-back" href="../html.html">назад</a>
+
+    
+    <script> 
+            function PrintSubtraction(text) {
+               var textMas = new String(text).split(" ");
+
+               var chetnie =0;
+               var nechetnie =0;
+
+               for(text of textMas)
+           {
+               var chislo = parseInt(text);
+               if(chislo % 2 == 0)
+               chetnie +=chislo;
+                  else
+                      nechetnie +=chislo;
+           }
+
+               return chetnie - nechetnie;
+           }
+
+               var text = "1 3 7 8 6 20 1 2";
+
+               var result = PrintSubtraction(text);
+
+               alert(result);
+      </script>
+</body>
+</html>
