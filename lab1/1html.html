@@ -23,46 +23,34 @@
             <h1 class="header" style="text-align: center!important;">Лабораторная работа №1</h1>
             <h4 class="text-center">Вариант: №4</h4>
             <p class='description'>4.Создайте функцию, которая принимает массив целых чисел, отдельно суммирует четные и нечетные числа, а затем возвращает разницу между суммой четных и нечетных чисел.</p>
-            <div class="result-group">
-                <span id="text" class='description' >Целые числа: </span>
-               	<span id="result" class='description' >Сумма: </span>
-               
-            </div>
+        <div class="result-group">
+ <script>
+         function PrintSubtraction(arr) {
+                 var chetnie = 0;
+                 var nechetnie = 0;
+
+         arr.forEach(element => {
+         {
+           if(element % 2 == 0){
+           chetnie +=element;
+     }else{
+           nechetnie +=element;
+          }
+    }
+        });
+
+        return chetnie - nechetnie;
+    }
+
+        var arr = parseInt([1, 2, 3, 4, 5, 6, 7, 8]);
+        var result = PrintSubtraction(arr);
+document.writeln('<span id="text" class="description" >Целые числа: </span> ', arr);
+document.writeln('<span id="result" class="description" >Сумма: </span>', result);
+</script>
+</div>
             </div>
         </div>        
     </div>
-
-    <a id='back' class="btn btn-dark button-back" href="../html.html">назад</a>
-
-    
-    <script> 
-            function PrintSubtraction(text) {
-               var textMas = new String(text).split(" ");
-
-               var chetnie =0;
-               var nechetnie =0;
-
-            textMas.forEach(element -> {
-            {
-               var chislo = parseInt(text);
-               if(chislo % 2 == 0){
-                      chetnie +=chislo;
-               }else{
-                      nechetnie +=chislo;
-               }
-            }   
-            });
-
-               return chetnie - nechetnie;
-            }
-
-               var text = "1 2 3 4 5 6 7";
-
-               var result = PrintSubtraction(text);
-               document.writeln('<span id="text" class='description' >Целые числа: </span>', text)
-               document.writeln('<span id="result" class='description' >  Сумма: </span>', result)    
-
-               
-      </script>
+          <a id='back' class="btn btn-dark button-back" href="../html.html">назад</a>
 </body>
 </html>
