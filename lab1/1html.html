@@ -26,8 +26,8 @@
         <div class="result-group">
  <script>
          function PrintSubtraction(arr) {
-                 var chetnie = parseInt("0");
-                 var nechetnie = parseInt("0");
+                 var chetnie = 0;
+                 var nechetnie = 0;
 
          arr.forEach(element => {
          {
@@ -43,7 +43,7 @@
     }
 
         var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-        var result = PrintSubtraction(arr);
+        var result = parseInt(PrintSubtraction(arr));
 document.writeln('<span id="text" class="description" >Массив целых чисел: </span> ', arr);
 document.writeln('<span id="result" class="description" >.        Сумма: </span>', result);
 </script>
