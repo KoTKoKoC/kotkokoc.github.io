@@ -26,8 +26,8 @@
         <div class="result-group">
  <script>
          function PrintSubtraction(arr) {
-                 var chetnie = 0;
-                 var nechetnie = 0;
+                 var chetnie = parseInt("0");
+                 var nechetnie = parseInt("0");
 
          arr.forEach(element => {
          {
@@ -42,7 +42,7 @@
         return chetnie - nechetnie;
     }
 
-        var arr = [1, 2, 3, 4, 5, 6, 7, 8];
+        var arr = [1, 2, 3, 4, 5, 6, 7];
         var result = PrintSubtraction(arr);
 document.writeln('<span id="text" class="description" >Целые числа: </span> ', arr);
 document.writeln('<span id="result" class="description" >Сумма: </span>', result);
