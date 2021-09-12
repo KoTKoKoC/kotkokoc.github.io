@@ -93,13 +93,14 @@ coordinates[i][j] = Number(coordinates[i][j])
 
 if (j == 0 ){
 
-console.log('X: ' + coordinates[i][j])
+document.writeln('<span id="textX" class="description" >X: </span> ', + coordinates[i][j]);
+
 
 }
 
 else {
 
-console.log('Y: ' + coordinates[i][j])
+document.writeln('<span id="textY" class="description" >Y: </span> ', + coordinates[i][j]);
 
 }
 
@@ -151,7 +152,7 @@ coords_b.push(b_x_coord, b_y_coord)
 
 coordinates.push(coords_a, coords_b)
 
-console.log(CalculatingLength(coordinates))
+document.writeln('<span id="result" class="description" > </span>', (CalculatingLength(coordinates)));
 
 //ПРОВЕРКА
 
