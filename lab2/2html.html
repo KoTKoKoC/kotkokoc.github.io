@@ -93,14 +93,14 @@ coordinates[i][j] = Number(coordinates[i][j])
 
 if (j == 0 ){
 
-document.writeln('<span id="result-group" class="description" >X: </span> ', + coordinates[i][j]);
+document.writeln('<span id="text" class="result-group" >X: </span> ', + coordinates[i][j]);
 
 
 }
 
 else {
 
-document.writeln('<span id="result-group" class="description" >Y: </span> ', + coordinates[i][j]);
+document.writeln('<span id="text" class="result-group" >Y: </span> ', + coordinates[i][j]);
 
 }
 
@@ -153,7 +153,7 @@ coords_b.push(b_x_coord, b_y_coord)
 
 coordinates.push(coords_a, coords_b)
 
-document.writeln('<span id="result-group" class="description" > </span>', (CalculatingLength(coordinates)));
+document.writeln('<span id="text" class="result-group" > </span>', (CalculatingLength(coordinates)));
 
 //ПРОВЕРКА
 
