@@ -93,14 +93,14 @@ coordinates[i][j] = Number(coordinates[i][j])
 
 if (j == 0 ){
 
-document.writeln('<span id="input-group" class="description" >X: </span> ', + coordinates[i][j]);
+document.writeln('<span id="result-group" class="description" >X: </span> ', + coordinates[i][j]);
 
 
 }
 
 else {
 
-document.writeln('<span id="input-group" class="description" >Y: </span> ', + coordinates[i][j]);
+document.writeln('<span id="result-group" class="description" >Y: </span> ', + coordinates[i][j]);
 
 }
 
@@ -121,9 +121,9 @@ var b_x = b[0]
 var b_y = b[1]
 
 var d = ((a_x - b_x)**2 + (a_y-b_y)**2)**0.5
-var result = CalculatingLength (coordinates);
+
 return 'Ответ: ' + d + '\n'
-document.writeln('<span id="result" class="description" >Сумма: </span>', result);
+
 
 }
 
@@ -153,7 +153,7 @@ coords_b.push(b_x_coord, b_y_coord)
 
 coordinates.push(coords_a, coords_b)
 
-document.writeln('<span id="input-group" class="description" > </span>', (CalculatingLength(coordinates)));
+document.writeln('<span id="result-group" class="description" > </span>', (CalculatingLength(coordinates)));
 
 //ПРОВЕРКА
 
