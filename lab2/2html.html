@@ -36,6 +36,14 @@
 
     <a id='back' class="btn btn-dark button-back" href="../html.html">назад</a>
     
-    <script src="./js/2js.js"></script>
+    <script>
+        const cutLength = (a,b) => Math.sqrt( (b.y - a.y)**2 + (b.x - a.x)**2 );
+
+alert(cutLength(
+    {x : 10, y : 15},
+    {x : 25, y : 30}
+));
+        
+</script>
 </body>
 </html>
