@@ -94,7 +94,7 @@
                 let coords_a_1 =[]
                 coords_a_1.push(a_x_coord_1, a_y_coord_1)
                 coordinates.push(coords_a_1)
-                console.log(CalculatingLength(coordinates_1))
+                document.writeln('<span id="text" class="note" ><strong></strong></span> ',(CalculatingLength(coordinates_1)))
             //2) ПЕРЕДАНЫ НЕ ВСЕ КООРДИНАТЫ ТОЧЕК
                 let coordinates_2 = []
             //Координаты точки a
@@ -108,9 +108,9 @@
                 let coords_b_2 =[]
                 coords_b_2.push(b_x_coord_2)
                 coordinates_2.push(coords_a_2, coords_b_2)
-                console.log(CalculatingLength(coordinates_2))
+                document.writeln('<span id="text" class="note" ><strong></strong></span> ',(CalculatingLength(coordinates_2)))
             //3) ПЕРЕДАН НЕ МАССИВ
-                console.log(CalculatingLength(12))
+               document.writeln('<span id="text" class="note" ><strong></strong></span> ',(CalculatingLength(12)))
             //3.1) ПЕРЕДАН НЕ МАССИВ
                 let coordinates_3 = []
             //Координаты точки a
