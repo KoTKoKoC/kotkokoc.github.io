@@ -54,7 +54,7 @@
                                 coordinates[i][j] = Number(coordinates[i][j])
                             }
                             if (j == 0 ){
-                                document.writeln('<span id="text" class="note" ><strong>Кординаты по X </strong></span> ', + coordinates[i][j]);
+                                document.writeln('<span id="text" class="note" ><strong>Координаты первой точки: </strong></span> ', + coordinates[i][j]);
                             }
                             else {
                                 document.writeln('<span id="text" class="note" ><strong>Кординаты по Y </strong></span> ', + coordinates[i][j]);
@@ -121,8 +121,8 @@
             //Координаты точки b
                 let b_x_coord_3 = 2
                 let b_y_coord_3 = '-1'
-                let coords_b_3 =[]
-                coords_b_3.push(b_x_coord_2)
+                //let coords_b_3 =[]
+                //coords_b_3.push(b_x_coord_2)
                 coordinates_3.push(coords_a_3, b_x_coord_3, b_y_coord_3)
                 console.log(CalculatingLength(coordinates_3))        
             </script>   
