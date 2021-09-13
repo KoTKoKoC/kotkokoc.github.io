@@ -54,10 +54,10 @@
                                 coordinates[i][j] = Number(coordinates[i][j])
                             }
                             if (j == 0 ){
-                                document.writeln('<span id="text" class="note" ><br>Координаты первой точки:<strong></strong></span> ', + coordinates[i][j] </br>);
+                                document.writeln('<span id="text" class="note" ><br>Координаты первой точки:</br></span> ', + coordinates[i][j]);
                             }
                             else {
-                                document.writeln('<span id="text" class="note" ><br>Координаты второй точки:</br><strong></strong></span> ', + coordinates[i][j]);
+                                document.writeln('<span id="text" class="note" ><br>Координаты второй точки:</br></span> ', + coordinates[i][j]);
                             }
                         }
                     }
@@ -83,7 +83,7 @@
                 let coords_b =[]
                 coords_b.push(b_x_coord, b_y_coord)
                 coordinates.push(coords_a, coords_b)
-                document.writeln('<span id="text" class="result-group" ></span> ', CalculatingLength (coordinates));
+                document.writeln('<span id="text" class="result-group" ><br><strong></strong> </br></span> ', CalculatingLength (coordinates));
             //ПРОВЕРКА
             //1) ПЕРЕДАНЫ КООРДИНАТЫ ОДНОЙ ТОЧКИ
             //Массив для координат двух точек
