@@ -18,9 +18,7 @@
             <h4 class="text-center">Вариант: №1</h4>
 
             <p class='description'>1.	Напишите функцию, которая принимает координаты двух точек на двухмерной плоскости и возвращает длину отрезка, соединяющего эти две точки.</p>
-    
-            <p id="text" class='note'> <strong>Координаты:</strong> X(a,b), Y(a,b) </p>
-
+  
     <div class="result-group" style="
     /* text-align: -webkit-right; */
     /* font-size: calc(1.275rem + .3vw); */
@@ -68,7 +66,7 @@
                     var b_x = b[0]
                     var b_y = b[1]
                     var d = ((a_x - b_x)**2 + (a_y-b_y)**2)**0.5
-                    return 'Ответ: ' + d + '\n'
+                    return '' + d + '\n'
                 }
             //Массив для координат двух точек
                 let coordinates = []
@@ -83,7 +81,7 @@
                 let coords_b =[]
                 coords_b.push(b_x_coord, b_y_coord)
                 coordinates.push(coords_a, coords_b)
-                document.writeln('<span id="text" class="result-group" ><br><strong></strong> </br></span> ', CalculatingLength (coordinates));
+                document.writeln('<span id="text" class="result-group" ><br><strong>Ответ: </strong> </br></span> ', CalculatingLength (coordinates));
             //ПРОВЕРКА
             //1) ПЕРЕДАНЫ КООРДИНАТЫ ОДНОЙ ТОЧКИ
             //Массив для координат двух точек
