@@ -54,10 +54,10 @@
                                 coordinates[i][j] = Number(coordinates[i][j])
                             }
                             if (j == 0 ){
-                                document.writeln('<span id="text" class="note" ><strong>Координаты первой точки: </strong></span> ', + Array.isArray(coordinates));
+                                document.writeln('<span id="text" class="note" ><strong>Координаты первой точки: </strong></span> ', + coordinates[0]);
                             }
                             else {
-                                document.writeln('<span id="text" class="note" ><strong>Кординаты по Y </strong></span> ', + Array.isArray(coordinates));
+                                document.writeln('<span id="text" class="note" ><strong>Кординаты по Y </strong></span> ', + coordinates[1]);
                             }
                         }
                     }
