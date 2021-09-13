@@ -24,6 +24,7 @@
     <div class="result-group" style="
     text-align: center!important;
     font-size: calc(1.275rem + .3vw);">
+        </div>
   <script>
        function CalculatingLength (coordinates) {
 
@@ -141,7 +142,7 @@ coords_b.push(b_x_coord, b_y_coord)
 
 coordinates.push(coords_a, coords_b)
 
-document.writeln('<span id="text" class="note" > </span>', (CalculatingLength(coordinates)));
+document.writeln('<span id="text" class="result-group" > </span>', (CalculatingLength(coordinates)));
 
 //ПРОВЕРКА
 
@@ -226,7 +227,7 @@ coordinates_3.push(coords_a_3, b_x_coord_3, b_y_coord_3)
 console.log(CalculatingLength(coordinates_3))
         
 </script>
-    </div>
+    
   </div>        
 </div>
 <a id='back' class="btn btn-dark button-back" href="../html.html">назад</a>
