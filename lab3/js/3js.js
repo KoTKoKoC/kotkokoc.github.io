@@ -1,39 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const input = document.getElementById('input');
+    const input = document.getElementById('input1');
+    const input = document.getElementById('input2');
     const button = document.getElementById('btn');
 
     const result = document.getElementById('result');
 
     // АЛГОРИТМ
-    const countDeep = (arrayStr) => {
-        if (typeof arrayStr !== 'string') {
-            throw new Error("Введена не строка!");
-        }
+    function calculate() {
+    var e = document.getElementById("user_select"),
+        user_operator = e.options[e.selectedIndex].value,
+        val1 = +document.getElementById("input1").value,
+        val2 = +document.getElementById("input2").value,
+       
 
-        const chars = arrayStr.split("");
-
-        // Проверка на лишние символы
-        for (let i = 0; i < chars.length; i++) {
-            if (chars[i] !== '[' && chars[i] !== ']') return "Лишние символы в строке!"
-        }
-
-        const left = arrayStr.split('[');
-        const right = arrayStr.split(']');
-
-        // Проверка, что справа и слева одинаковая глубина массива
-        if (right.length === left.length)
-            return left.length - 1;
-        else
-            return "Невозможно измерить глубину!"
+    switch (user_operator) {
+        case '+':
+            result.value = val1 + val2;
+            break;
+        case '*':
+            result.value = val1 * val2;
+            break;
+        case '/':
+            result.value = val1 / val2;
     }
-    // 
-
-    button.addEventListener('click', () => {
-        if (!input.value) {
-            result.innerHTML = "Введите строку!"
-            return;
-        }
-
-        result.innerHTML = countDeep(input.value);
+}
+        result.innerHTML = calculate();
     })
 })
