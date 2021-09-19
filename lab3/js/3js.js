@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const input = document.getElementById('input1');
-    const input = document.getElementById('input2');
+    const input = document.getElementById('input');
     const button = document.getElementById('btn');
 
     const result = document.getElementById('result');
