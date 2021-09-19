@@ -38,8 +38,8 @@
     function calculate() {
     var e = document.getElementById("user_select"),
         user_operator = e.options[e.selectedIndex].value,
-        val1 = +document.getElementById("value1").value,
-        val2 = +document.getElementById("value2").value,
+        val1 = parseFloat+document.getElementById("value1").value,
+        val2 = parseFloat+document.getElementById("value2").value,
         result = document.getElementById("answer");
 
     switch (user_operator) {
