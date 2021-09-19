@@ -41,7 +41,7 @@
         val1 = +document.getElementById("value1").value,
         val2 = +document.getElementById("value2").value,
         result = document.getElementById("answer");
-    if(val1%1 != 0 || val2%1 != 0){
+    if(typeof val1 != 'number' || typeof val2 != 'number'){
        alert('Ошибка, введи целое число')
     return false
     }
