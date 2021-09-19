@@ -6,24 +6,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const result = document.getElementById('result');
 
     // АЛГОРИТМ
-    function calculate() {
-    var e = document.getElementById("user_select"),
-        user_operator = e.options[e.selectedIndex].value,
-        val1 = +document.getElementById("input1").value,
-        val2 = +document.getElementById("input2").value,
-       
-
-    switch (user_operator) {
-        case '+':
-            result.value = val1 + val2;
-            break;
-        case '*':
-            result.value = val1 * val2;
-            break;
-        case '/':
-            result.value = val1 / val2;
-    }
+    const countDeep = (arrayStr) => {
+        if (typeof arrayStr !== 'string') {
+            throw new Error("Введена не строка!");
+        }
+        For(let i = 0;i < strong.length; i++){
+            If(str.charAt(i) == '+'){
+                let sum = str.charAt(i-1) + str.charAt(i+1);}
 }
-        result.innerHTML = calculate();
+Return sum;
+
+        const chars = arrayStr.split("");
+        result.innerHTML = Return sum();
     })
 })
