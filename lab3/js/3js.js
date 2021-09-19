@@ -10,13 +10,25 @@ document.addEventListener('DOMContentLoaded', () => {
         if (typeof arrayStr !== 'string') {
             throw new Error("Введена не строка!");
         }
-        For(let i = 0;i < strong.length; i++){
-            If(str.charAt(i) == '+'){
-                let sum = str.charAt(i-1) + str.charAt(i+1);}
-}
-Return sum;
 
         const chars = arrayStr.split("");
-        result.innerHTML = Return sum();
+
+        // Проверка на лишние символы
+        for (let i = 0; i < chars.length; i++) {
+            if (chars[i] !== '' && chars[i] !== '') return "Лишние символы в строке!"
+        }
+
+        const plus = arrayStr.split('+');
+        const minus = arrayStr.split('-');
+
+    // 
+
+    button.addEventListener('click', () => {
+        if (!input.value) {
+            result.innerHTML = "Введите строку!"
+            return;
+        }
+
+        result.innerHTML = countDeep(input.value);
     })
 })
