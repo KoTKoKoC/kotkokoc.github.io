@@ -13,8 +13,7 @@ function calculate() {
         alert('Ошибка, введи целое число, а не строку')
     return false
     }  
-    Double.parseDouble(val1)
-    Double.parseDouble(val2)
+
    
     switch (user_operator) {
         case '+':
