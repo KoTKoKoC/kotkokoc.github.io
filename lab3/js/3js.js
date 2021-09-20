@@ -1,8 +1,8 @@
 function calculate() {
     var e = document.getElementById("user_select"),
         user_operator = e.options[e.selectedIndex].value,
-        val1 = +document.getElementById("value1").value,
-        val2 = +document.getElementById("value2").value,
+        double(val1) = +document.getElementById("value1").value,
+        double(val2) = +document.getElementById("value2").value,
         result = document.getElementById("answer");
         
     if(typeof val1 != 'number' || typeof val2 != 'number'){
