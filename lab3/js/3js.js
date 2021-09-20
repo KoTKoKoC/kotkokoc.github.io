@@ -9,10 +9,7 @@ function calculate() {
        alert('Ошибка, введи целое число, а не строку')
     return false
     } 
-    if(val1%1 != 0 || val2%1 != 0){
-        alert('Ошибка, введи целое число, а не строку')
-    return false
-    }  
+   
    
    
     switch (user_operator) {
