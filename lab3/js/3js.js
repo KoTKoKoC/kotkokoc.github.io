@@ -13,7 +13,7 @@ function calculate() {
         alert('Ошибка, введи целое число, а не строку')
     return false
     }  
-
+   
    
     switch (user_operator) {
         case '+':
