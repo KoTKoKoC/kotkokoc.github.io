@@ -4,8 +4,7 @@ function calculate() {
         val1 = +document.getElementById("value1").value,
         val2 = +document.getElementById("value2").value,
         result = document.getElementById("answer");
-        double val1;
-        double val2;
+        
     if(typeof val1 != 'number' || typeof val2 != 'number'){
        alert('Ошибка, введи целое число, а не строку')
     return false
@@ -14,7 +13,7 @@ function calculate() {
         alert('Ошибка, введи целое число, а не строку')
     return false
     }  
-   
+    Double.parseDouble( val1 || val2 ) 
    
     switch (user_operator) {
         case '+':
