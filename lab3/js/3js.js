@@ -1,5 +1,5 @@
 function calculate() {
-    var double e = document.getElementById("user_select"),
+    var e = document.getElementById("user_select"),
         user_operator = e.options[e.selectedIndex].value,
         val1 = +document.getElementById("value1").value,
         val2 = +document.getElementById("value2").value,
