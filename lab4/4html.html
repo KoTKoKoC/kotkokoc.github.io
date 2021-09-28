@@ -42,10 +42,7 @@
     <a id='back' class="btn btn-dark button-back" href="../html.html">назад</a>
     
     <script>
-   document.addEventListener('DOMContentLoaded', () => {     
-   const vowel = document.getElementById('vowel-result');
-   const consonants = document.getElementById('consonants-result');      
-  const word = "12qweyo",
+   const word = "1212weqeqeq",
   vowel = [],
   consonants = [];
 
@@ -55,19 +52,8 @@ for (let char of word) {
 
 }
 
-button.addEventListener('click', () => {
-        if (!input.value) {
-            letters.innerHTML = "Пустая строка"
-            decimal.innerHTML = "Пустая строка"
-            return;
-        }
-
-        
-
-        vowel.innerHTML = chars.vowel
-        consonants.innerHTML = chars.consonants
-    })
-}
+console.log(vowel);
+console.log(consonants);
 </script>
 </body>
 </html>
