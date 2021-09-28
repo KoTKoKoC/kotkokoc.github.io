@@ -20,6 +20,7 @@
   else listNVow.push(char);
 
 }
+ const chars = countChars(input.value);
  listVow.innerHTML = chars.listVow
  listNVow.innerHTML = chars.listNVow
 }})
