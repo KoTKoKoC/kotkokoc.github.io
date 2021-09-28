@@ -1,10 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const input = document.getElementById('input');
-
-    const button = document.getElementById('btn');
-
-    const listVow = document.getElementById('listVow');
-    const listNVow = document.getElementById('listNVow');
 
     // АЛГОРИТМ
    public class Solution {
@@ -46,10 +39,4 @@ document.addEventListener('DOMContentLoaded', () => {
         return false;
     }
 }
-    // 
-
    
-
-        const chars = Solution(input.value);
-    })
-})
