@@ -7,18 +7,20 @@
     const listNVow = document.getElementById('listNVow-result');
 
     // АЛГОРИТМ
-    
-  const word = "12qweyo",
+  const countChars = (string) => {
+  if (typeof string !== 'string') {
+  throw new Error("Введена не строка!");
+        } 
+  
   listVow = [],
   listNVow = [];
 
-  for (let char of word) {
+  for (let char of countChars) {
   if (char.match(/[aeiou]/)) listVow.push(char);
   else listNVow.push(char);
 
 }
  listVow.innerHTML = chars.listVow
  listNVow.innerHTML = chars.listNVow
-
-    })
+}})
 
