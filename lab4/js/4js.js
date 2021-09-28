@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const button = document.getElementById('btn');
 
-    const letters = document.getElementById('letters-result');
-    const decimal = document.getElementById('decimal-result');
+    const listVow = document.getElementById('listVow');
+    const listNVow = document.getElementById('listNVow');
 
     // АЛГОРИТМ
    public class Solution {
