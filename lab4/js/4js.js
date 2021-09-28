@@ -18,10 +18,18 @@
   for (let char of countChars) {
   if (char.match(/[aeiou]/)) listVow.push(char);
   else listNVow.push(char);
+      
 
-}
+}}
+      
+  button.addEventListener('click', () => {
+        if (!input.value) {
+            listVow.innerHTML = "Пустая строка"
+            listNVow.innerHTML = "Пустая строка"
+            return;
+        }     
  const chars = countChars(input.value);
  listVow.innerHTML = chars.listVow
  listNVow.innerHTML = chars.listNVow
-}})
+})
 
