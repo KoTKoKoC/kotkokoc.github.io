@@ -1,4 +1,4 @@
-   const word = "12qweyo",
+  const word = "12qweyo",
   vowel = [],
   consonants = [];
 
