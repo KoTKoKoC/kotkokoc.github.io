@@ -18,14 +18,7 @@
             <h4 class="text-center">Вариант: №7</h4>
 
             <p class='description'>Напишите функцию, которая берет строку, разбивает ее, и возвращает сначала гласные, а затем согласные. Любой символ, который не является гласным (например, специальные символы или пробелы), определяется как согласный</p>
-    
-            <div class="input-group">
-                <input id='input' class="form-control string-input" type="text" placeholder="Введите строку..."/>
-        
-                <button id='btn' class="btn btn-primary button">Разбить</button>
-            </div>
-               
-    
+   
     <script>
    const word = "1212weqeqeq",
   vowel = [],
@@ -36,8 +29,8 @@ for (let char of word) {
   else consonants.push(char);
 
 }
-document.writeln('<span  class="me-3" >Гласные буквы: </span> ', vowel);
-document.writeln('<span  class="me-3" >Согласные буквы и символы: </span>', consonants);
+document.writeln('<span  class="input-group" >Гласные буквы: </span> ', vowel);
+document.writeln('<span  class="input-group" >Согласные буквы и символы: </span>', consonants);
 
 </script>
 </div>             
