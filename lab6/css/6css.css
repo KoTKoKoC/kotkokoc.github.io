@@ -56,3 +56,10 @@ body {
     transition: background-color .4s ease-in;
 
 }
+.button {
+    display: block;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    padding: 7px 20px;
+    text-transform: uppercase;
+}
