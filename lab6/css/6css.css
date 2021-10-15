@@ -56,24 +56,7 @@ body {
     transition: background-color .4s ease-in;
 
 }
-button {
-    margin-top: 10px;
-    border-radius: 20px;
-    height: 30px;
-    max-width: 140px;
-    width: 100%;
-    color: #fff;
-    background-color: #696969;
-    vertical-align: middle;
-    outline: none;
-    /* display: inline-block; */
-    box-sizing: border-box;
-    cursor: url(picture/light/Help.cur),default;
-    border: 2px solid rgb(216, 109, 41,1);
-    font-size: 16px;
-    -webkit-transition: 0.2s ease-in-out;
-    transition: 0.2s ease-in-out;
-}
+
 .h2 {
     display: block;
     font-size: 1.5em;
