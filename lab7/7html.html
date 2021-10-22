@@ -23,18 +23,49 @@
     /* font-size: calc(1.275rem + .3vw); */
      display: contents;">    
     <script>
-   const word = "человекМуравей, человекПаук, человекКрыс, бэтман, аквамен",
-  vowel = [],
-  consonants = [];
+   const objectArray = [ 
+firstObject = {
+  name: "Бетман",
+  id: "герой"
+},
+secondObject = {
+  name: "Паук",
+  id: "человек"
+},
+thirdObject = {
+  name: "Муравей",
+  id: "человек"
+},
+fourthObject = {
+  name: "Джокер",
+  id: "герой"
+},
+fifthObject = {
+  name: "Коза",
+  id: "человек"
+},
+sixthObject = {
+  name: "Дедпул",
+  id: "герой"
+},
+]
+const maxId = "человек";
 
-for (let char of word) {
-  if (char.match(/[человек]/)) vowel.push(char);
-  else consonants.push(char);
-  arr.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase())).join(`\n`)
-}
-document.writeln('<span  class="description" > <br> </br>Предложение: </span> ', word);        
-document.writeln('<span  class="description" > <br> </br>Гласные буквы: </span> ', vowel);
-document.writeln('<span  class="description" > <br> </br>Согласные буквы и символы: </span>', consonants);
+const makeidDiscrimArray = (objectArray) => {
+  const idDiscrimArray = [];
+  const above67Array = [];
+  const length = objectArray.length;
+  for (let i = 0; i < objectArray.length; i++) {
+    if (objectArray[i].id <= maxId) {
+      idDiscrimArray.push(i)
+    } 
+    else {
+      above67Array.push(i); // I know, it is a superfluity
+    }
+  }
+return idDiscrimArray;
+};
+document.writeln('<span  class="description" > <br> </br>Вывод: </span> ',makeidDiscrimArray(objectArray));
 
         </script>
        </div>                        
