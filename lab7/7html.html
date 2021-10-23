@@ -51,10 +51,11 @@ resultGroup.innerHTML = getResult(items);
 }
 //Основная функция
 function getResult(listOfCoordinates){
-   //массив, длина =2, 1 и 2 элемент число
-if (Array.isArray(getResult)) {
+arr.length = 2;   //массив, длина =2, 1 и 2 элемент число
+
 if(Math.abs(listOfCoordinates[0][0]-listOfCoordinates[1][0])==Math.abs(listOfCoordinates[0][1]-listOfCoordinates[1][1]) || listOfCoordinates[0][0]==listOfCoordinates[1][0] || listOfCoordinates[0][1]==listOfCoordinates[1][1]){
-  return "является массивом";
+if (Array.isArray(getResult)) {  
+    return "является массивом";
 } else {
  return "не является массивом";
 } 
