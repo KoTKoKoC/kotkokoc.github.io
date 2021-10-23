@@ -52,8 +52,10 @@ resultGroup.innerHTML = getResult(items);
 //Основная функция
 function getResult(listOfCoordinates){
 Array.isArray(arr)
-arr.length = 2;
-    //массив, длина =2, 1 и 2 элемент число
+arr.some(callback(inputYourX.length))
+arr.some(callback(inputYourY.length))
+arr.some(callback(inputEnemyX.length))
+arr.some(callback(inputEnemyY.length))    //массив, длина =2, 1 и 2 элемент число
 if(Math.abs(listOfCoordinates[0][0]-listOfCoordinates[1][0])==Math.abs(listOfCoordinates[0][1]-listOfCoordinates[1][1]) || listOfCoordinates[0][0]==listOfCoordinates[1][0] || listOfCoordinates[0][1]==listOfCoordinates[1][1]){
 return "Да";
 }
