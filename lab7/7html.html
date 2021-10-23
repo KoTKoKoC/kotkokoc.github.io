@@ -26,46 +26,46 @@
    const objectArray = [ 
 firstObject = {
   name: "Бетман",
-  id: "герой"
+  title: "герой"
 },
 secondObject = {
   name: "Паук",
-  id: "человек"
+  title: "человек"
 },
 thirdObject = {
   name: "Муравей",
-  id: "человек"
+  title: "человек"
 },
 fourthObject = {
   name: "Джокер",
-  id: "герой"
+  title: "герой"
 },
 fifthObject = {
   name: "Коза",
-  id: "человек"
+  title: "человек"
 },
 sixthObject = {
   name: "Дедпул",
-  id: "герой"
+  title: "герой"
 },
 ]
-const maxId = "человек";
+const title = "человек";
 
-const makeidDiscrimArray = (objectArray) => {
-  const idDiscrimArray = [];
+const maketitleDiscrimArray = (objectArray) => {
+  const titleDiscrimArray = [];
   const above67Array = [];
   const length = objectArray.length;
   for (let i = 0; i < objectArray.length; i++) {
-    if (objectArray[i].id <= maxId) {
-      idDiscrimArray.push(i)
+    if (objectArray[i].title <= title) {
+      titleDiscrimArray.push(i)
     } 
     else {
       above67Array.push(i); // I know, it is a superfluity
     }
   }
-return idDiscrimArray;
+return titleDiscrimArray;
 };
-document.writeln('<span  class="description" > <br> </br>Вывод: </span> ',makeidDiscrimArray(objectArray));
+document.writeln('<span  class="description" > <br> </br>Вывод: </span> ',maketitleDiscrimArray(objectArray));
 
         </script>
        </div>                        
