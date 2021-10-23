@@ -28,7 +28,7 @@
 <p class='description'> Координаты вашего ферзя: x-<input type="text" id="inputYourX"> y-<input type="text" id="inputYourY"></p>
 <p class='description'> Координаты вражеского ферзя: x-<input type="text" id="inputEnemyX"> y-<input type="text" id="inputEnemyY"></p>
 <input class='description' type="submit" onclick="clickToAnalise()" value="Получить результат">
-<p id='result'></p>
+<p style="font-size: 1.8rem;" id='result'></p>
 <div class="result-group" style="
 /* text-align: -webkit-right; */
 /* font-size: calc(1.275rem + .3vw); */
@@ -53,10 +53,10 @@ resultGroup.innerHTML = getResult(items);
 function getResult(listOfCoordinates){
     //массив, длина =2, 1 и 2 элемент число
 if(Math.abs(listOfCoordinates[0][0]-listOfCoordinates[1][0])==Math.abs(listOfCoordinates[0][1]-listOfCoordinates[1][1]) || listOfCoordinates[0][0]==listOfCoordinates[1][0] || listOfCoordinates[0][1]==listOfCoordinates[1][1]){
-return "Да";
+return "Успешно";
 }
 else{
-return "Нет";
+return "Шах";
 }
 
 }
