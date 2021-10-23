@@ -17,55 +17,13 @@
 
             <h4 class="text-center">Вариант: №4</h4>
 
-            <p class='description'>4.В шахматах ферзи могут перемещаться на любое количество клеток по горизонтали, вертикали или диагонали. Учитывая расположение вашего ферзя и ферзя оппонента, определите, можете ли вы захватить ферзя оппонента. Ваше местоположение и местоположение ваших противников - это первый и второй элементы массива соответственно.</p>
+            <p class='description'>В шахматах ферзи могут перемещаться на любое количество клеток по горизонтали, вертикали или диагонали. Учитывая расположение вашего ферзя и ферзя оппонента, определите, можете ли вы захватить ферзя оппонента. Ваше местоположение и местоположение ваших противников - это первый и второй элементы массива соответственно.</p>
          <div class="result-group" style="
     /* text-align: -webkit-right; */
     /* font-size: calc(1.275rem + .3vw); */
      display: contents;">    
     <script>
-   const objectArray = [ 
-firstObject = {
-  name: "Бетман",
-  title: "герой"
-},
-secondObject = {
-  name: "Паук",
-  title: "человек"
-},
-thirdObject = {
-  name: "Муравей",
-  title: "человек"
-},
-fourthObject = {
-  name: "Джокер",
-  title: "герой"
-},
-fifthObject = {
-  name: "Коза",
-  title: "человек"
-},
-sixthObject = {
-  name: "Дедпул",
-  title: "герой"
-},
-]
-const title = "человек";
-
-const maketitleDiscrimArray = (objectArray) => {
-  const titleDiscrimArray = [];
-  const above67Array = [];
-  const length = objectArray.length;
-  for (let i = 0; i < objectArray.length; i++) {
-    if (objectArray[i].title <= title) {
-      titleDiscrimArray.push(i)
-    } 
-    else {
-      above67Array.push(i); // I know, it is a superfluity
-    }
-  }
-return titleDiscrimArray;
-};
-document.writeln('<span  class="description" > <br> </br>Вывод: </span> ',maketitleDiscrimArray(objectArray));
+   
 
         </script>
        </div>                        
