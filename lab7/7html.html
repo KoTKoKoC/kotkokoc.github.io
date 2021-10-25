@@ -46,11 +46,12 @@ let items = [
 [inputYourX.value, inputYourY.value],
 [inputEnemyX.value, inputEnemyY.value]
 ];
+if ((isNaN(items) == true)&&(typeof items === "string")) {
+alert("Вы ввели не число, заполните заново");    
 
 resultGroup.innerHTML = getResult(items);
 }
-if ((isNaN(items) == true)&&(typeof items === "string")) {
-alert("Вы ввели не число, заполните заново");
+
   
 //Основная функция
 function getResult(listOfCoordinates){
