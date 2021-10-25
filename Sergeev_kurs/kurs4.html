@@ -95,7 +95,7 @@
 
             function generateWorkPlace(){
             document.body.innerHTML += "<div id=\"workPlace\"></div>";
-          
+            document.querySelector("#centr") += "<div id=\"workPlace\"></div>";
             }
             
 
@@ -118,7 +118,7 @@
                 }
             }
 
-            document.querySelector("#centr") += "<div id=\"workPlace\"></div>";
+            document.querySelector("#centr").append(tbl);
 
             addMainButton();
         }
