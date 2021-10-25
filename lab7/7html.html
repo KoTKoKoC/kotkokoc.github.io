@@ -49,6 +49,14 @@ let items = [
 
 resultGroup.innerHTML = getResult(items);
 }
+if ((isNaN(inputYourX) == true)&&(typeof inputYourX === "string")) {
+alert("Вы ввели не число, заполните заново");
+if ((isNaN(inputYourY) == true)&&(typeof inputYourY === "string")) {
+alert("Вы ввели не число, заполните заново");
+if ((isNaN(inputEnemyX) == true)&&(typeof inputEnemyX === "string")) {
+alert("Вы ввели не число, заполните заново");
+if ((isNaN(inputEnemyY) == true)&&(typeof inputEnemyY === "string")) {
+alert("Вы ввели не число, заполните заново");    
 //Основная функция
 function getResult(listOfCoordinates){
 if(Math.abs(listOfCoordinates[0][0]-listOfCoordinates[1][0])==Math.abs(listOfCoordinates[0][1]-listOfCoordinates[1][1]) || listOfCoordinates[0][0]==listOfCoordinates[1][0] || listOfCoordinates[0][1]==listOfCoordinates[1][1]){
