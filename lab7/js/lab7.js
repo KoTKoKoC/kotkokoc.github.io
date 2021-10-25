@@ -24,8 +24,8 @@ for (var i = 0; i < 2; i++) {
 if (k == 0){
  if( ( (mas1[0]==mas2[0]) && (mas1[1]!=mas2[1]) )|| ((mas1[0]!=mas2[0])&&(mas1[1]==mas2[1])) 
  	|| (Math.abs(mas1[0]-mas2[0])==Math.abs(mas1[1]-mas2[1])) )
-        document.writeln("YES")
+        alert("YES")
  
     else
-        document.writeln("NO")
-} else document.writeln("Вы ввели неверные данные")
+        alert("NO")
+} else alert("Вы ввели неверные данные")
