@@ -34,12 +34,13 @@
 /* font-size: calc(1.275rem + .3vw); */
 display: contents;">
 <script>
+if ((isNaN(clickToAnalise) == true)&&(typeof clickToAnalise === "string")) {    
 let inputYourX = document.getElementById('inputYourX');
 let inputYourY = document.getElementById('inputYourY');
 let inputEnemyX = document.getElementById('inputEnemyX');
 let inputEnemyY = document.getElementById('inputEnemyY');
 
-if ((isNaN(clickToAnalise) == true)&&(typeof clickToAnalise === "string")) {
+
 function clickToAnalise(){
 let resultGroup = document.getElementById('result');
 let items = [
