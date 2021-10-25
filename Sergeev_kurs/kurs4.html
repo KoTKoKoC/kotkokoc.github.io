@@ -79,6 +79,7 @@
 
         function generateData()
         {
+            
             delElements();
             delWorkPlace();
 
@@ -92,7 +93,10 @@
                 return false;
             }
 
-            generateWorkPlace();
+            function generateWorkPlace(){
+            document.body.innerHTML += "<div id=\"workPlace\"></div>";
+            }
+            document.querySelector("#card") += "<div id=\"workPlace\"></div>";
 
             let tbl = document.createElement("table");
             tbl.insertRow(-1);
