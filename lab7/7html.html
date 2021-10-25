@@ -51,9 +51,10 @@ alert("Вы ввели не число, заполните заново");
 
 resultGroup.innerHTML = getResult(items);
 }
-
+}
   
 //Основная функция
+if ((Array.isArray(mas)) && (Number.isInteger(n)) && (Number.isInteger(m))) {    
 function getResult(listOfCoordinates){
 if(Math.abs(listOfCoordinates[0][0]-listOfCoordinates[1][0])==Math.abs(listOfCoordinates[0][1]-listOfCoordinates[1][1]) || listOfCoordinates[0][0]==listOfCoordinates[1][0] || listOfCoordinates[0][1]==listOfCoordinates[1][1]){
 return "Да";
@@ -63,7 +64,7 @@ return "Нет";
 }
 
 }
-
+}
 </script>
 </div>
 </div>
