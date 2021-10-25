@@ -34,16 +34,12 @@
 /* font-size: calc(1.275rem + .3vw); */
 display: contents;">
 <script>
-   
+
 let inputYourX = document.getElementById('inputYourX');
 let inputYourY = document.getElementById('inputYourY');
 let inputEnemyX = document.getElementById('inputEnemyX');
 let inputEnemyY = document.getElementById('inputEnemyY');
-    
-   
-if(Array.isArray(items));
-if(items.lenght == 2);
-if(Number.isInteger(getResult));
+
 function clickToAnalise(){
 let resultGroup = document.getElementById('result');
 let items = [
@@ -52,10 +48,13 @@ let items = [
 ];
 resultGroup.innerHTML = getResult(items);
 }
-  
+
 //Основная функция
 
 function getResult(listOfCoordinates){
+if(!Array.isArray(listOfCoordinates)) return "Нужен массив!";
+if(listOfCoordinates.lenght != 2) return "Длина массива не равна 2!";
+if(!Number.isInteger(listOfCoordinates[0][0]) || !Number.isInteger(listOfCoordinates[0][1]) || !Number.isInteger(listOfCoordinates[1][0]) || !Number.isInteger(listOfCoordinates[1][1])) return "Один из элементов массива не является числом";
 if(Math.abs(listOfCoordinates[0][0]-listOfCoordinates[1][0])==Math.abs(listOfCoordinates[0][1]-listOfCoordinates[1][1]) || listOfCoordinates[0][0]==listOfCoordinates[1][0] || listOfCoordinates[0][1]==listOfCoordinates[1][1]){
 return "Да";
 }
@@ -63,6 +62,9 @@ else{
 return "Нет";
 }
 }
+
+
+</script>
 
 
 </script>
