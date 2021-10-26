@@ -1,8 +1,8 @@
 var mas1 = new Array()
 var mas2 = new Array()
 for (var i = 0; i < 2; i++) {
-	mas1[i] = prompt("Введите координату дружественого ферзя")
-	mas2[i] = prompt("Введите координату вражеского ферзя")
+	mas1[i] = prompt("Введите координату дружественого ферзя от 1 до 8")
+	mas2[i] = prompt("Введите координату вражеского ферзя от 1 до 8")
 }
 
 function CountingNumCheck(num) {
