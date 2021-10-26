@@ -1,34 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сергеев Иван Курсовая работа Вариант №4</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">  
-    <link rel="stylesheet" href="./kurs/kurs.css"> 
-</head>
-<body>
-    <div class="card" style="width: 70%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    padding: 1rem;
-    transform: translateX(-50%) translateY(-50%);">
-    <div class="card-body"><p class="header"><strong>Разработка скрипта «Самый большой остров».</strong> Остров - это регион прилегающих друг к другу единиц 
-        (по горизонтали, вертикали или диагонали). Для данного фрагмента карты, представленного двумерным массивом, 
-        создайте функцию, которая возвращает площадь самого большого острова. Карты могут быть любого размера m x n. 
-        На картах всегда будет хотя бы 1 элемент.</p>
-
-    <div class="card-body">
-        <input class='description' id="rowCount" type="number" value="1" placeholder = "Количество строк"><br><br>
-        <input class='description' id="colCount" type="number" value="1" placeholder = "Количество столбцов"><br><br>
-        <button class='description' onclick="generateData()">Подготовить данные для массива</button>
-        <input class='description' type="button" value="Очистить" onClick="window.location.reload()"><br><br>
-    </div>
-     
-    <script>
-    let data;
+let data;
         let largeIsland = new Array();
         let rowCount;
         let colCount;
@@ -79,7 +49,6 @@
 
         function generateData()
         {
-            
             delElements();
             delWorkPlace();
 
@@ -93,22 +62,18 @@
                 return false;
             }
 
-            function generateWorkPlace(){
-            document.body.innerHTML += "<div id=\"workPlace\"></div>";
-            
-            }
-            
+            generateWorkPlace();
 
             let tbl = document.createElement("table");
             tbl.insertRow(-1);
 
-            for (let j=0; j<=colCount; j++) tbl.tBodies[0].rows[0].insertCell(-1).innerHTML = j||" ";
+            for (let j=0; j<=colCount; j++)	tbl.tBodies[0].rows[0].insertCell(-1).innerHTML = j||" ";
 
             for (let i=1; i<=rowCount; i++)
             {
                 tbl.insertRow(-1).insertCell(-1).innerHTML = i;
 
-                for (let j=1; j<=colCount; j++) 
+                for (let j=1; j<=colCount; j++)	
                 {
                     let input = document.createElement("input");
                     input.id=input.name="m_"+i+"_"+j;
@@ -118,7 +83,7 @@
                 }
             }
 
-           document.body.querySelector("#centr") += "<div id=\"workPlace\"></div>";
+            document.querySelector("#workPlace").append(tbl);
 
             addMainButton();
         }
@@ -205,9 +170,4 @@
                 document.body.innerHTML += "<p class=\"error\">Введенное значение не является числом!</p>";
                 return true;
             }
-        }    
-    </script>
-        </div>
-    </div> 
-</body>  
-</html>
+        }
