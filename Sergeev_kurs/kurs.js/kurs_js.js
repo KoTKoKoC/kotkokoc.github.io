@@ -105,12 +105,12 @@ let data;
         }
 
         function generateWorkPlace(){
-            document.body.innerHTML += "<div id=\"workPlace\"></div>";
+            document.querySelector("#block").innerHTML += "<div id=\"workPlace\"></div>";
         }
 
         function addMainButton(){
             document.querySelector("#workPlace").innerHTML +=
-            "<br><button onclick=run()>Найти самый большой остров</button><br><br>";
+            "<br><button onclick=run() >Найти самый большой остров</button><br><br>";
         }
 
         function addArrayInDocument(){
@@ -123,11 +123,11 @@ let data;
         function showLargeIsland(){
             if(largeIsland.length > 0){
                 largeIsland.sort(compareNumbers).reverse();
-                document.querySelector("#workPlace").innerHTML += "<p class=elements>Площадь самого большого острова = " 
+                document.querySelector("#workPlace").innerHTML += "<p class=elements><b>Площадь самого большого острова = </b>" 
                     + largeIsland[0] + "</p>";
                 largeIsland.length = 0;
             }else{
-                document.querySelector("#workPlace").innerHTML += "<p class=elements>На карте нет островов!</p>";
+                document.querySelector("#workPlace").innerHTML += "<p class=elements><b>На карте нет островов!</b></p>";
             }
         }
 
