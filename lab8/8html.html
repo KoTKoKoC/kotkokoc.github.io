@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЛБ 8</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/8css.css">
+</head>
+<body>
+    <div class="card">
+        <div class="card-body">
+            <h1 class="header">Лабораторная работа №8</h1>
+            <h4 class="text-center">Вариант: №8</h4>
+            <p class='description'>8.	Создайте функцию, которая принимает массив из 10 чисел (от 0 до 9) и возвращает строку этих чисел, отформатированных как номер телефона (например, (555) 555-5555).</p>
+                
+            <h2>Введите номер телефона:</h2>
+            <input type="text" size="50" style ="font-size: 18px" id="input1" >
+    
+            <h2>Результат:</h2>
+            <textarea  id="textArea" rows="10" cols="45" name="text"></textarea>
+            <br> <br>
+            <!-- <button onclick="countStep()" id="masIn" class="button2" type="button" >Вывести</button> -->
+            <button onclick="document.getElementById('textArea').value = phoneNumber(document.getElementById('input1').value)" id="elemMas" class="button1" type="button" style="font-size: 1.8rem;">Проверить</button>
+
+    
+        </div>
+        
+    </div>
+
+   <script src="./js/8js.js"></script>	 
+   <a id='back' class="btn btn-dark button-back" href="../html.html">назад</a> 
+
+</body>
+</html>
