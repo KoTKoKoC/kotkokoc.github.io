@@ -91,7 +91,7 @@
         };
 	//создание html элемента
         function genWorkPlace() {
-            document.querySelector("#block").innerHTML += "<div id=\"workPlace\"></div>";
+            document.querySelector("#optimiz").innerHTML += "<div id=\"workPlace\"></div>";
         };
 		
         function MainButton() {
@@ -138,21 +138,21 @@
 	//проверки
         function chekSizeArr(size) {
             if(size <= 0) {
-                document.querySelector("#errorblock").innerHTML += "<div id=\"workPlace\"><b>Количество строк и/или столбцов не может быть меньше 1!</b></div>";
+                document.querySelector("#optimizblock").innerHTML += "<div id=\"workPlace\"><b>Количество строк и/или столбцов не может быть меньше 1!</b></div>";
                 return true;
             };
         };
 		
         function chekArr(array) {
             if(!Array.isArray(array)) {
-                document.querySelector("#errorblock").innerHTML += "<div id=\"workPlace\"><b>Не является массивом!</b></div>";
+                document.querySelector("#optimizblock").innerHTML += "<div id=\"workPlace\"><b>Не является массивом!</b></div>";
                 return true;
             };
         };
 		
         function chekNum(number) {
             if(!Number.isInteger(number)) {
-                document.querySelector("#errorblock").innerHTML += "<div id=\"workPlace\"><b>Введенное значение не является числом!</b></div>";
+                document.querySelector("#optimizblock").innerHTML += "<div id=\"workPlace\"><b>Введенное значение не является числом!</b></div>";
                 return true;
             };
         };
