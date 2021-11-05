@@ -3,7 +3,7 @@ let data;
         let numberOfRows;
         let numberOfColumns;
 
-        function run(){ 
+        function start(){ 
             delElements();
             DataInArray();
             if(chekArray(data)){
@@ -110,7 +110,7 @@ let data;
 
         function MainButton(){
             document.querySelector("#workPlace").innerHTML +=
-            "<br><button onclick=run() >Найти самый большой остров</button><br><br>";
+            "<br><button onclick=start() >Найти самый большой остров</button><br><br>";
         }
 
         function ArrayInDocument(){
