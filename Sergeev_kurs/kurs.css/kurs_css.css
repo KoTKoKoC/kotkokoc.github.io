@@ -68,16 +68,16 @@ body {
     color: #eee;
     transition: all .4s ease-in;
 }
-body{
+.body{
       width: 60%;
       margin: auto;
      }
 
-body{
+.body{
       width: 60%;
       margin: auto;
      }
-td > input{
+.td > input{
      width: 4rem;
      height: 3rem;
      }
