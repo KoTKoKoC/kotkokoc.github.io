@@ -67,6 +67,8 @@
 			input.id=input.name="m_" +i+ "_" +j;
 			input.type = "number";
 			input.defaultValue = Math.floor(Math.random() * 2);
+			if (input.defaultValue === "1") input.style.backgroundColor = "#9999FF";
+			console.log(input);
 			tbl.tBodies[0].rows[i].insertCell(-1).appendChild(input);
 		    };
 	        };
