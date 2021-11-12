@@ -6,7 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const mainFunction = (number) => {
     if (typeof number != "string")
       throw new Error("Входной параметр - строковое представление числа!");
-    if (!/\b[0-9]+\b/.test(number)) throw new Error("Введите число!");
+    if (!/\b^[+-]?(0|[1-9][0-9]*)$\b/.test(number)) 
+      throw new Error("Введите число!");
 
     const maxNumberStr = number.split("").sort((a, b) => Number(b) - Number(a));
     const maxNumber = Number(maxNumberStr.join(""));
