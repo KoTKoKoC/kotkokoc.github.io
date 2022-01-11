@@ -298,7 +298,7 @@ intro__subtitle {
 /* social */
 .social {
   margin-top: 40px;
-  display: flex;
+  display: inline-table;
   flex-direction: column;
   justify-content: space-around;
 }
