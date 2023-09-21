@@ -1,0 +1,106 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+/* Добавляем стили для разделов с фоновым изображением */
+.section-bg {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-size: cover; /* Растягиваем изображение для заполнения фона */
+    background-position: center center; /* Центрируем изображение */
+}
+
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+section {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+img {
+    max-width: 5%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Анимация для разделов */
+section:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Стили для ссылок в навигации */
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #FF6F61;
+}
+/* Пример фонового изображения для раздела "О нас" */
+#about.section-bg {
+    background-image: url(''); /* Укажите путь к вашему изображению */
+}
+
+/* Пример фонового изображения для раздела "Особенности" */
+#features.section-bg {
+    background-image: url(''); /* Укажите путь к вашему изображению */
+}
+
+/* Пример фонового изображения для раздела "Контакты" */
+#contact.section-bg {
+    background-image: url('7.jpg'); /* Укажите путь к вашему изображению */
+}
