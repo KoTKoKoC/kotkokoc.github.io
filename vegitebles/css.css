@@ -1,0 +1,124 @@
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header.hero {
+    background-image: url('https://thumbs2.imgbox.com/ce/3f/M0US9ja3_t.png');
+    background-position: center;
+    color: black;
+    text-align: center;
+    padding: 120px 30px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+	text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.benefits .benefit-cards,
+.products .product-gallery,
+.testimonials .testimonial-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.benefit-card,
+.product-item,
+.testimonial-card {
+    margin: 20px;
+    flex: 1 1 200px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.product-item img,
+.testimonial-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.farmers-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.farmers-content img {
+    max-width: 400px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-form {
+    flex: 1 1 300px;
+    max-width: 400px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #ff4500;
+}
+
+.address {
+    flex: 1 1 300px;
+    max-width: 400px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    margin-top: 20px;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+}
